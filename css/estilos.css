@@ -1,0 +1,82 @@
+body{
+    background-image: url(../img/mabook.jpg);
+}
+h2{
+    font-family: Arial;
+    font-size: 350%;
+    color:rgb(19, 23, 23);
+    font-weight: bold;
+}
+
+.slider{
+    width: 95%;
+    margin: auto; /* este centrado*/
+    overflow: hidden;/* ocultan las imagenes para que los elementos salgan no se vean */
+}
+
+.slider ul{
+    display: flex; /*para poner las imagenes una al lado de otra */
+    padding:0;/* quita el relleno*/
+    width:400%;/* quita el relleno*/
+
+    animation: cambio 20s infinite;/* animacion para que dure 7 segundos y que se repita indefinidamente */
+    animation-timing-function: ease-in;
+}
+.slider li{
+    list-style: none; /* quita estilo de la lista la viñeta */
+    width: 100%;
+}
+.slider img{
+    width: 25%;/* tamaño de las imagenes*/
+    margin-top: -165px;
+    border-radius: 50%;
+}
+
+@keyframes cambio{  /*keyframe van a ser las paradas de las imagenes */
+    /* tiempo de la primera imagen */
+    0% {margin-left:0;}
+    20%{margin-left: 0;}/*tiempo de la imagen 4 segundos*/
+    /* demora de la primera imagen a la otra */
+
+    /* tiempo de la segunda imagen */
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    /* tiempo de la tercer imagen */
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+}
+.grid{ /* lea la informaion con una grilla*/
+    display: grid; /* da efecto al poner el cursor */
+    grid-template-columns: 45% 45%;  /* la posicion de las columnas */
+    gap: 2em;
+}
+
+.grid div{
+    background: #01acc8;  /* fondo de la grilla*/
+}
+.grid div:hover{
+    border: 5px solid #ecedf1; /*efecto del borde  */
+    padding: 1em;/* espacio de margenes para el texto*/
+}
+fieldset{
+    color: black;
+    font-size: 150;
+    border-color: black;
+    font-weight: bold;
+    font-family: Happy Time;
+}
+
+legend{
+    font-family: Arial;
+    font-size: 220%;
+    font-weight: bold;
+}
+
+li{
+    margin-top: 8px;
+}
+.Gifformato{
+    width:30%;
+    height: 30%;
+}
