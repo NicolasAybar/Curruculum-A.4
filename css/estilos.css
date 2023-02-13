@@ -16,7 +16,7 @@ h2{
 
 .slider ul{
     display: flex; /*para poner las imagenes una al lado de otra */
-    padding:0;/* quita el relleno*/
+    padding: 0;/* quita el relleno*/
     width:400%;/* quita el relleno*/
 
     animation: cambio 20s infinite;/* animacion para que dure 7 segundos y que se repita indefinidamente */
@@ -30,6 +30,11 @@ h2{
     width: 25%;/* tamaño de las imagenes*/
     margin-top: -165px;
     border-radius: 50%;
+}
+.slider .imagenCV{
+    width: 55%;/* tamaño de las imagenes de letras cv*/
+   
+    border-radius: 30%;
 }
 
 @keyframes cambio{  /*keyframe van a ser las paradas de las imagenes */
@@ -62,7 +67,7 @@ h2{
 fieldset{
     color: black;
     font-size: 150;
-    border-color: black;
+    border-color: rgb(91, 84, 153);
     font-weight: bold;
     font-family: Happy Time;
 }
